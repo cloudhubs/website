@@ -1,0 +1,20 @@
+{
+  "tabWidth": 4,
+  "useTabs": false,
+  "printWidth": 120,
+  "singleQuote": true,
+  "jsxSingleQuote": true,
+  "endOfLine": "lf",
+  "importOrder": ["^../", "^./"],
+  "importOrderSeparation": true,
+  "importOrderSortSpecifiers": true,
+  "importOrderParserPlugins": ["typescript", "jsx"],
+  "overrides": [
+    {
+      "files": "*.json",
+      "options": {
+        "tabWidth": 2
+      }
+    }
+  ]
+}

@@ -1,2 +1,2 @@
-# website
+# Website
 cloudhubs.ecs.baylor.edu website
