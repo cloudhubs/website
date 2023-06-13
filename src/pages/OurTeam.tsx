@@ -34,8 +34,7 @@ const OurTeam = () => {
                                                 }}
                                             >
                                                 <Title level={2}>
-                                                    {/* TODO: add team link */}
-                                                    <Link style={{ fontSize: '1.5rem' }} href=''>
+                                                    <Link style={{ fontSize: '1.5rem' }} href={`/our-team/${team.id}`}>
                                                         {team.name}
                                                     </Link>
                                                 </Title>

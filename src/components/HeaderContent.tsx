@@ -9,7 +9,11 @@ interface HeaderContentProps {
 const HeaderContent = ({ pages }: HeaderContentProps) => {
     console.log(window.location);
     const items: NonNullable<MenuProps['items']> = pages.map(({ name, link }) => ({
-        label: <Link href={link}>{name}</Link>,
+        label: (
+            <Link href={link} strong>
+                {name}
+            </Link>
+        ),
         key: link,
     }));
     return (

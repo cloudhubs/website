@@ -1,4 +1,4 @@
-import { Layout, Space } from 'antd';
+import { Layout } from 'antd';
 import './App.css';
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import FooterContent from './components/FooterContent';
@@ -7,41 +7,54 @@ import FutureMembers from './pages/FutureMember';
 import Home from './pages/Home';
 import IRES from './pages/IRES';
 import OurTeam from './pages/OurTeam';
+import OurTeamMember from './pages/OurTeamMember';
 import Publications from './pages/Publications';
 import Research from './pages/Research';
 
 const { Header, Footer, Content } = Layout;
 
-const pages: Array<{ name: string; link: string; component: JSX.Element }> = [
+const pages: Array<{ name: string; link: string; component: JSX.Element; inHeader: boolean }> = [
     {
         name: 'Home',
         link: '/',
         component: <Home />,
+        inHeader: true,
     },
     {
         name: 'Our Team',
         link: '/our-team',
         component: <OurTeam />,
+        inHeader: true,
+    },
+    {
+        name: 'Our Team',
+        link: '/our-team/:id',
+        component: <OurTeamMember />,
+        inHeader: false,
     },
     {
         name: 'Research',
         link: '/research',
         component: <Research />,
+        inHeader: true,
     },
     {
         name: 'Publications',
         link: '/publications',
         component: <Publications />,
+        inHeader: true,
     },
     {
         name: 'IRES',
         link: '/ires',
         component: <IRES />,
+        inHeader: true,
     },
     {
         name: 'Future Member',
         link: '/future-member',
         component: <FutureMembers />,
+        inHeader: true,
     },
 ];
 
@@ -78,7 +91,7 @@ function App() {
         <Router>
             <Layout>
                 <Header style={headerStyle}>
-                    <HeaderContent pages={pages} />
+                    <HeaderContent pages={pages.filter((page) => page.inHeader)} />
                 </Header>
                 <Content style={contentStyle}>
                     <Routes>
