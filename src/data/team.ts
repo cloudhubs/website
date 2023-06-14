@@ -1,3 +1,5 @@
+import { config } from '../config';
+
 interface Education {
     date: string;
     title: string;
@@ -50,7 +52,7 @@ const teams: Array<TeamMember> = [
         ],
         phone: '+1 (254) 710-6838',
         email: 'tomas_cerny@baylor.edu',
-        image: '/images/team/cerny.jpg',
+        image: `${config.baseUrl}images/team/cerny.jpg`,
         links: {
             web: 'http://cs.baylor.edu/~cerny/',
         },
@@ -98,7 +100,7 @@ const teams: Array<TeamMember> = [
             'He is currently a Research Assistant with the Department of Computer Science, Baylor University, Waco, TX, USA. His research interests include security in Internet of Things using event-driven programming and program code analysis for quality assurance and testing.',
         ],
         phone: '+1 (254)214 2983',
-        image: '/images/team/svacina.jpg',
+        image: `${config.baseUrl}images/team/svacina.jpg`,
         email: 'jan_svacina2@baylor.edu',
         links: {
             github: 'https://github.com/svacina',
@@ -114,7 +116,7 @@ const teams: Array<TeamMember> = [
         biography: [
             'Graduate student of Computer Science at Baylor University. He received his Bachelor’s degree from the Department of Computer Science and Engineering at the Chittagong University of Engineering and Technology in Chittagong, Bangladesh. His research focus is on software engineering, microservice security and code analysis.',
         ],
-        image: '/images/team/dipta.jpg',
+        image: `${config.baseUrl}images/team/dipta.jpg`,
         email: 'dipta_das1@baylor.edu',
         links: {
             github: 'https://github.com/diptadas',
@@ -128,7 +130,7 @@ const teams: Array<TeamMember> = [
         role: 'Team Leads',
         title: 'Source Crawler Lead',
         origin: 'Baylor University',
-        image: '/images/team/bushong.png',
+        image: `${config.baseUrl}images/team/bushong.png`,
         links: {
             github: 'https://github.com/vinbush',
         },
@@ -137,7 +139,7 @@ const teams: Array<TeamMember> = [
         id: 'andrew-walker',
         name: 'Andrew Walker',
         role: 'Team Leads',
-        image: '/images/team/walker.png',
+        image: `${config.baseUrl}images/team/walker.png`,
         links: {
             github: 'https://github.com/walker76',
         },
@@ -160,7 +162,7 @@ const teams: Array<TeamMember> = [
             'I am a Senior Computer Science student studying at Baylor University. I plan to graduate in December of 2020 with a Bachelors in Computer Science, Software Engineering concentration.  I am currently doing  research under Baylor University, Red Hat, and Czech Tech University.',
             '',
         ],
-        image: '/images/team/brighton.jpg',
+        image: `${config.baseUrl}images/team/brighton.jpg`,
         email: 'Elizabeth_Brighton@Baylor.edu',
         links: {
             github: 'https://github.com/egbrighton',
@@ -172,7 +174,7 @@ const teams: Array<TeamMember> = [
         role: 'IRES 2020',
         title: 'Source Crawler',
         origin: 'Baylor University',
-        image: '/images/team/baylor-bear.png',
+        image: `${config.baseUrl}images/team/baylor-bear.png`,
         links: {
             github: 'https://github.com/nnazo',
         },
@@ -183,7 +185,7 @@ const teams: Array<TeamMember> = [
         role: 'IRES 2020',
         title: 'Source Crawler',
         origin: 'Baylor University',
-        image: '/images/team/baylor-bear.png',
+        image: `${config.baseUrl}images/team/baylor-bear.png`,
         links: {
             github: 'https://github.com/mdu2017',
         },
@@ -206,7 +208,7 @@ const teams: Array<TeamMember> = [
             'He is currently a Research Assistant with the Department of Computer Science, Baylor University, Waco, TX, USA. His research interests include big data, pattern matching, and computer graphics.',
         ],
         phone: '(805)390-9939',
-        image: '/images/team/fuller.jpg',
+        image: `${config.baseUrl}images/team/fuller.jpg`,
         email: 'Mark_Fuller1@baylor.edu',
         links: {
             github: 'http://github.com/MarkFuller1',
@@ -230,7 +232,7 @@ const teams: Array<TeamMember> = [
             'I am an incoming Senior Computer Science student with a concentration in Software Engineering attending Baylor University. I plan to graduate with a Bachelors in May 2021. Areas of interest include Machine learning and algorithms',
             '',
         ],
-        image: '/images/team/raffety.jpg',
+        image: `${config.baseUrl}images/team/raffety.jpg`,
         email: 'Jackson_Raffety1@baylor.edu',
         links: {
             github: 'https://github.com/JacksonRaffety',
@@ -242,7 +244,7 @@ const teams: Array<TeamMember> = [
         role: 'IRES 2020',
         title: 'Source Crawler',
         origin: 'Baylor University',
-        image: '/images/team/baylor-bear.png',
+        image: `${config.baseUrl}images/team/baylor-bear.png`,
         links: {
             github: 'https://github.com/RussellSanders1',
         },
@@ -257,7 +259,7 @@ const teams: Array<TeamMember> = [
             'I am an incoming Computer Science Junior at Baylor University, anticipating to earn my bachelors in Spring 2022. I have worked with multiple programming languages, specifically C++, Javascript, Python, and Java. I have experience ranging from development with React for SIL International during Summer 2019 to touching on machine learning while working as an undergraduate research assistant for Baylor University and Red Hat in Summer 2020.',
         ],
         phone: '(512) 431-5981',
-        image: '/images/team/schiewe.jpg',
+        image: `${config.baseUrl}images/team/schiewe.jpg`,
         email: 'Micah_Schiewe1@baylor.edu',
         links: {
             github: 'https://github.com/MicahSchiewe',
@@ -306,7 +308,7 @@ const teams: Array<TeamMember> = [
             'I have experience in IT from working with the Baylor IT department on security in 2019 as well as experience in research during the summer of 2020 as an undergraduate research assistant.',
         ],
         phone: '(512) 968-3711',
-        image: '/images/team/stone.png',
+        image: `${config.baseUrl}images/team/stone.png`,
         email: 'brooklynn_stone1@baylor.edu',
         links: {
             github: 'https://github.com/brooklynnStone1',
@@ -345,7 +347,7 @@ const teams: Array<TeamMember> = [
             '',
         ],
         phone: '(123)-456-7890',
-        image: '/images/team/woodahl.jpg',
+        image: `${config.baseUrl}images/team/woodahl.jpg`,
         email: 'Connor_woodahl1@baylor.edu',
         links: {
             github: 'https://github.com/Connor-woodahl',

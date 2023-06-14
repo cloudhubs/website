@@ -1,9 +1,10 @@
 import { Layout } from 'antd';
 import './App.css';
-import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
+import { Navigate, Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import CarouselHeader, { CarouselHeaderProps } from './components/CarouselHeader';
 import FooterContent from './components/FooterContent';
 import HeaderContent from './components/HeaderContent';
+import { config } from './config';
 import { homeCarouselItems } from './data/home';
 import FutureMembers from './pages/FutureMember';
 import Home from './pages/Home';
@@ -43,7 +44,7 @@ const pages: Array<{
                 {
                     title: 'OUR TEAM',
                     description: 'CLOUDHUBS TEAM',
-                    image: '/images/header/bear_habitat.jpg',
+                    image: `${config.baseUrl}images/header/bear_habitat.jpg`,
                 },
             ],
         },
@@ -60,7 +61,7 @@ const pages: Array<{
                 {
                     title: '​',
                     description: '',
-                    image: '/images/header/fun-fact-bg.jpg',
+                    image: `${config.baseUrl}images/header/fun-fact-bg.jpg`,
                 },
             ],
         },
@@ -77,7 +78,7 @@ const pages: Array<{
                 {
                     title: 'RESEARCH',
                     description: '',
-                    image: '/images/header/fun-fact-bg.jpg',
+                    image: `${config.baseUrl}images/header/fun-fact-bg.jpg`,
                 },
             ],
         },
@@ -94,7 +95,7 @@ const pages: Array<{
                 {
                     title: 'PUBLICATIONS',
                     description: '',
-                    image: '/images/header/fun-fact-bg.jpg',
+                    image: `${config.baseUrl}images/header/fun-fact-bg.jpg`,
                 },
             ],
         },
@@ -111,7 +112,7 @@ const pages: Array<{
                 {
                     title: 'IRES',
                     description: '',
-                    image: '/images/header/ires-2019.jpg',
+                    image: `${config.baseUrl}images/header/ires-2019.jpg`,
                 },
             ],
         },
@@ -128,7 +129,7 @@ const pages: Array<{
                 {
                     title: 'FUTURE MEMBER',
                     description: 'JOIN CLOUDHUBS',
-                    image: '/images/header/fun-fact-bg.jpg',
+                    image: `${config.baseUrl}images/header/fun-fact-bg.jpg`,
                 },
             ],
         },
@@ -199,6 +200,7 @@ function App() {
                                     }
                                 />
                             ))}
+                        <Route path='/web' element={<Navigate to={'/'}></Navigate>}></Route>
                     </Routes>
                 </Content>
                 <Content style={contentStyle}>

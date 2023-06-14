@@ -1,4 +1,5 @@
 import { Card, Col, Image, Row, Typography } from 'antd';
+import { config } from '../config';
 import { teams } from '../data/team';
 
 const { Title, Link, Paragraph, Text } = Typography;
@@ -58,7 +59,7 @@ const OurTeam = () => {
                                                                     <Image
                                                                         width='100%'
                                                                         preview={false}
-                                                                        src='/images/website/github.png'
+                                                                        src={`${config.baseUrl}images/website/github.png`}
                                                                     />
                                                                 </Link>
                                                             </Col>
@@ -69,7 +70,7 @@ const OurTeam = () => {
                                                                     <Image
                                                                         width='100%'
                                                                         preview={false}
-                                                                        src='/images/website/linkedin.png'
+                                                                        src={`${config.baseUrl}images/website/linkedin.png`}
                                                                     />
                                                                 </Link>
                                                             </Col>
@@ -80,7 +81,7 @@ const OurTeam = () => {
                                                                     <Image
                                                                         width='100%'
                                                                         preview={false}
-                                                                        src='/images/website/website.png'
+                                                                        src={`${config.baseUrl}images/website/website.png`}
                                                                     />
                                                                 </Link>
                                                             </Col>
