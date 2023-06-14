@@ -12,8 +12,6 @@ const publicationsByYear = publications.reduce((acc, publication) => {
     return acc;
 }, {} as Record<number, Publication[]>);
 
-console.log(publicationsByYear);
-
 const Publications = () => {
     const tabItems: TabsProps['items'] = Object.entries(publicationsByYear)
         .sort(([year1], [year2]) => (+year1 < +year2 ? 1 : -1))
