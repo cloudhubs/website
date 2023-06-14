@@ -19,7 +19,9 @@ const HeaderContent = ({ pages }: HeaderContentProps) => {
         <>
             <Row>
                 <Col offset={1}>
-                    <Title level={2}>Baylor Cloudhubs Lab</Title>
+                    <Title level={2} style={{ transform: 'translate(0, 2rem)' }}>
+                        Baylor Cloudhubs Lab
+                    </Title>
                 </Col>
             </Row>
             <Row>
