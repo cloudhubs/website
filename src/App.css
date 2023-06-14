@@ -36,3 +36,16 @@
         transform: rotate(360deg);
     }
 }
+
+.slick-dots li:not(.slick-active) button {
+    width: 20px;
+    height: 20px;
+    background-color: #ffffff;
+    opacity: 0.6;
+}
+
+.slick-dots li.slick-active button {
+    width: 20px;
+    height: 20px;
+    background-color: #ffffff;
+}
