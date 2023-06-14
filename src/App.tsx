@@ -53,6 +53,17 @@ const pages: Array<{
         name: 'Our Team',
         link: '/our-team/:id',
         component: <OurTeamMember />,
+        componentHeaderProps: {
+            autoplay: false,
+            backgroundOpacity: 0,
+            items: [
+                {
+                    title: '​',
+                    description: '',
+                    image: '/images/header/fun-fact-bg.jpg',
+                },
+            ],
+        },
         inHeader: false,
     },
     {

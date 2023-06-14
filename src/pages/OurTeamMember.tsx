@@ -10,7 +10,7 @@ const OurTeamMember = () => {
     const team = teams.filter((team) => team.id === id)?.[0];
     return team ? (
         <Row>
-            <Col span={9}>
+            <Col span={9} style={{ top: '-125px' }}>
                 <Image width='90%' src={team.image} preview={false} />
                 <Card
                     style={{
